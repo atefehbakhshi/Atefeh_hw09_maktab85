@@ -9,7 +9,7 @@ class Calculator {
 
     calculate(str) {
         let arr = str.split(' ');
-        let [num1, operator, num2] = [...arr];
+        let [num1, operator, num2] = arr;
         let calc = this.math.get(operator);
 
         return calc(Number(num1), Number(num2));
@@ -22,7 +22,7 @@ class Calculator {
 
 let calc = new Calculator;
 alert(calc.calculate("3 + 7"));
-alert(calc.calculate("3 - 7"));
+alert(calc.calculate("7 - 3"));
 
 let powerCalc = new Calculator;
 powerCalc.addMethod('*', (a, b) => a * b);
