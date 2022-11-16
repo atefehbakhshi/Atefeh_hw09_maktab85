@@ -18,12 +18,22 @@
             <header class="py-6 lg:mb-12">
                 <nav class="flex justify-between items-center">
                     <ul class=" flex items-center space-x-8 list-none">
-                        <li class="text-lg">Atefeh</li>
+                        <li class="text-lg" id="myname">Atefeh</li>
                         <li class="text-[#999] hidden sm:block">at.bakhshi1373@gmail.com</li>
                     </ul>
-                    <span class="material-symbols-outlined cursor-pointer" id="menu">
+                    <span class="material-symbols-outlined cursor-pointer" id="open-menu">
                         segment
                     </span>
+                    <span class=" hidden cursor-pointer text-2xl z-10" id="close-menu">
+                        x
+                    </span>
+                    <div class="hidden pt-52 h-[100vh] w-[100vw] bg-black opacity-70 absolute top-0 left-0  "
+                        id="mobile-menu">
+                        <ul class=" flex flex-col items-center justify-center space-y-8 list-none">
+                            <li class="text-lg">Atefeh</li>
+                            <li>at.bakhshi1373@gmail.com</li>
+                        </ul>
+                    </div>
                 </nav>
             </header>
             <!-- End header -->
